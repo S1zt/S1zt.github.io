@@ -1,0 +1,85 @@
+.container {
+    text-align: center;
+    padding: 2rem 15px;
+    max-width: 800px; /* 限制最大宽度 */
+    margin: auto; /* 水平居中 */
+    background-color: #fff; /* 添加背景色 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    border-radius: 10px; /* 圆角边框 */
+}
+
+.container h3 {
+    color: #4a4a4a; /* 深色字体 */
+    margin-top: 1rem; /* 上边距 */
+    font-size: 2.5rem; /* 字体大小 */
+    margin-bottom: 0.5rem; /* 下边距 */
+    font-weight: 600; /* 字体加粗 */
+}
+
+.container hr {
+    border: none; /* 移除默认边框 */
+    height: 1px; /* 线条高度 */
+    background-color: #e0e0e0; /* 线条颜色 */
+    margin-bottom: 1rem; /* 分隔线下边距 */
+}
+
+.container p {
+    text-align: justify; /* 两端对齐 */
+    line-height: 1.6; /* 行高 */
+    font-size: 1.1rem; /* 字体大小 */
+    color: #333; /* 字体颜色 */
+    margin-bottom: 1rem; /* 段落下边距 */
+}
+
+.image-placeholder {
+    width: 100%; /* 占满容器宽度 */
+    height: 200px; /* 图片高度 */
+    background-color: #f0f0f0; /* 背景色 */
+    margin: 1rem 0; /* 上下边距 */
+    display: flex; /* Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    color: #666; /* 文字颜色 */
+    font-size: 1rem; /* 文字大小 */
+}
+
+.container .embedded-image, .image {
+    float: left; /* 图片浮动到左侧 */
+    margin-right: 1rem; /* 图片右侧空间 */
+    width: 50%; /* 图片宽度 */
+    height: auto; /* 高度自动调整 */
+    border-radius: 5px; /* 图片圆角 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 图片阴影 */
+}
+
+.image {
+    float: right; /* 图片浮动到右侧 */
+    margin-left: 1rem; /* 图片左侧空间 */
+}
+
+
+.container, .container *, .image, .image-placeholder {
+  transition: all 0.3s ease-in-out; /* 应用平滑的过渡效果 */
+}
+
+.container:hover {
+  transform: scale(1.02); /* 当鼠标悬停时轻微放大 */
+}
+
+.image:hover {
+  transform: scale(1.1); /* 图片悬停时放大 */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* 增强阴影效果 */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  animation: fadeIn 1s ease-out forwards; /* 应用淡入动画 */
+}
+
+.image:hover {
+  filter: brightness(120%) saturate(150%); /* 增加亮度和饱和度 */
+}
