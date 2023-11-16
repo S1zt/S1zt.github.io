@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environment-Friendly Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Eco Navigation</a>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="introduction.html" class="nav-links">Introduction</a></li>
+            <li><a href="Experimental Principles and Contents.html" class="nav-links">Experimental Principles and Contents</a></li>
+            <li><a href="resutl.html" class="nav-links">Results</a></li>
+        </ul>
+    </nav>
+    
+    <script src="script.js"></script>
+    <div class="lading-page">
+        <div class="page-content">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <h1 class="title" >Managenment fo automoldie exhaust</h1>
+            
+        </div>
+    </div>
+</body>
+</html>
